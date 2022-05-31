@@ -1,0 +1,39 @@
+.content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.ingredients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  width: max-content;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+li button {
+  margin-left: 1rem;
+}
+
+.recipe-img {
+  width: 85%;
+  border-radius: 8px;
+}

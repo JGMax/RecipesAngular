@@ -1,0 +1,25 @@
+header {
+  color: white;
+  background-color: #121212;
+  padding: 16px 16px;
+  margin: 0px;
+  display: flex;
+}
+
+header a {
+  font-size: 16px;
+  padding: 0.5em 1em;
+  margin-left: 16px;
+
+  border-bottom: 2px solid white;
+  text-decoration: none;
+}
+
+a:any-link {
+  color: white;
+}
+
+header a:hover {
+  color: #121212;
+  background-color: white;
+}

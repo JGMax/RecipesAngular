@@ -1,0 +1,49 @@
+
+.content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: row;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 0.5rem;
+}
+
+.addProductInput {
+  flex-grow: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  margin-left: 16px;
+  gap: 1rem;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}

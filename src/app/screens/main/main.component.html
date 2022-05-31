@@ -1,0 +1,11 @@
+<div class="content">
+  <div 
+  class="card"
+  *ngFor="let recipe of recipes"
+  [routerLink]="['/recipes', recipe.id]">
+    <img src="{{ recipe.img }}" class="card-img-top" alt="Recipe image" />
+    <div class="card-body">
+      <h4 class="card-title">{{ recipe.name }}</h4>
+    </div>
+  </div>
+</div>

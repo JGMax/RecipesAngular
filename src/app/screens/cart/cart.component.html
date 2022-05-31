@@ -1,0 +1,20 @@
+<div class="content">
+  <div class="inputField">
+    <input 
+    type="text" 
+    class="addProductInput" 
+    placeholder="Добавить продукт..." 
+    [(ngModel)]="inputText"/>
+    <button (click)="addProduct()" type="button">Добавить</button>
+  </div>
+
+  <div class="list">
+    <div class="listItem" *ngFor="let item of products | keyvalue">
+      {{ item.key }}
+      <div class="controls">
+        <div> {{ item.value }} </div>
+        <button (click)="removeProduct(item.key)" type="button">Удалить</button>
+      </div>
+    </div>
+  </div>
+</div>

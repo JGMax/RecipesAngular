@@ -1,0 +1,20 @@
+<div class="content">
+<img src="{{ recipe.img }}" class="recipe-img" alt="Recipe image" />
+
+<h2>{{ recipe.name }}</h2>
+<p *ngIf="recipe.text">{{ recipe.text }}</p>
+<h4>Шаги приготовления</h4>
+<ol *ngIf="recipe.steps">
+  <li *ngFor="let step of recipe.steps">{{ step }}</li>
+</ol>
+<h4>Ингредиенты</h4>
+<ol>
+  <li class="ingredients" *ngFor="let product of recipe.ingredients">
+    {{ product }}
+    <div class="controls"> 
+      <button type="button" (click)="addProduct(product)">В корзине: {{ productsCount(product) }}</button>
+      <button type="button" (click)="removeProduct(product)">Удалить</button>
+    </div>
+  </li>
+</ol>
+</div>
